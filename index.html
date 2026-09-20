@@ -529,12 +529,12 @@
             <div class="back-mini" onclick="goTo('eligibility')"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg><span data-i18n="common.back">Back</span></div>
             <h2 class="scr-title" data-i18n="loan.title">Your loan offer</h2>
             <p class="scr-sub" data-i18n="loan.subtitle">Indicative terms — the bank confirms the final offer.</p>
-            <div class="loan-hero"><div class="amt">₹1,80,000</div><div class="sub" data-i18n="loan.amountLabel">Loan amount</div></div>
+            <div class="loan-hero"><div class="amt">₹1,20,000</div><div class="sub" data-i18n="loan.amountLabel">Loan amount</div></div>
             <div class="spec-grid">
               <div class="spec"><div class="k" data-i18n="loan.interestRate">Interest rate</div><div class="v">5.2% p.a.</div></div>
-              <div class="spec"><div class="k" data-i18n="loan.period">Loan period</div><div class="v" data-i18n="loan.periodVal">5 years</div></div>
+              <div class="spec"><div class="k" data-i18n="loan.period">Loan period</div><div class="v" data-i18n="loan.periodVal"<3 years</div></div>
               <div class="spec"><div class="k" data-i18n="loan.sanctionIn">Sanction in</div><div class="v" data-i18n="loan.sanctionVal">~3 weeks</div></div>
-              <div class="spec"><div class="k" data-i18n="loan.estEmi">Estimated EMI</div><div class="v">₹3,430<span data-i18n="loan.perMonthShort">/mo</span></div></div>
+              <div class="spec"><div class="k" data-i18n="loan.estEmi">Estimated EMI</div><div class="v">₹3,610<span data-i18n="loan.perMonthShort">/mo</span></div></div>
             </div>
             <div class="btn-row"><button class="btn btn-primary" style="flex:1" onclick="goTo('agency')" data-i18n="loan.next">Next: find an agency</button></div>
           </section>
@@ -602,8 +602,8 @@
             <div class="back-mini" onclick="goTo('dashboard')"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg><span data-i18n="dashboard.title">Dashboard</span></div>
             <h2 class="scr-title" data-i18n="history.title">My applications</h2>
             <p class="scr-sub" data-i18n="history.subtitle">Every scheme you've applied for, in one place.</p>
-            <div class="app-row"><div class="top"><h5>PMEGP – Dairy Unit Subsidy</h5><span class="status-pill credited" data-i18n="history.credited">Credited</span></div><div class="meta"><span data-i18n="history.applied">Applied</span> 10-09-2026 · ₹1,80,000</div></div>
-            <div class="app-row"><div class="top"><h5>Tailoring Machine Grant</h5><span class="status-pill progress" data-i18n="history.inProgress">In progress</span></div><div class="meta"><span data-i18n="history.applied">Applied</span> 28-08-2026 · ₹45,000</div></div>
+            <div class="app-row"><div class="top"><h5>PMEGP – Dairy Unit Subsidy</h5><span class="status-pill credited" data-i18n="history.credited">Credited</span></div><div class="meta"><span data-i18n="history.applied">Applied</span> 10-09-2023 · ₹80,000</div></div>
+            <div class="app-row"><div class="top"><h5>Tailoring Machine Grant</h5><span class="status-pill progress" data-i18n="history.inProgress">In progress</span></div><div class="meta"><span data-i18n="history.applied">Applied</span> 28-08-2025 · ₹45,000</div></div>
             <div class="app-row"><div class="top"><h5>Mudra Loan – Shishu</h5><span class="status-pill progress" data-i18n="history.inProgress">In progress</span></div><div class="meta"><span data-i18n="history.applied">Applied</span> 14-08-2026 · ₹50,000</div></div>
           </section>
 
@@ -614,7 +614,7 @@
             <p class="scr-sub" data-i18n="emi.subtitle">See your estimated monthly payment before you apply.</p>
 
             <div class="slider-block">
-              <div class="lbl"><span data-i18n="loan.amountLabel">Loan amount</span><b id="lblAmt">₹1,80,000</b></div>
+              <div class="lbl"><span data-i18n="loan.amountLabel">Loan amount</span><b id="lblAmt">₹1,20,000</b></div>
               <input type="range" id="rAmt" min="10000" max="500000" step="5000" value="180000" oninput="calcEMI()">
             </div>
             <div class="slider-block">
@@ -622,25 +622,25 @@
               <input type="range" id="rRate" min="4" max="14" step="0.1" value="5.2" oninput="calcEMI()">
             </div>
             <div class="slider-block">
-              <div class="lbl"><span data-i18n="loan.period">Loan period</span><b id="lblTenure">5 years</b></div>
-              <input type="range" id="rTenure" min="1" max="10" step="1" value="5" oninput="calcEMI()">
+              <div class="lbl"><span data-i18n="loan.period">Loan period</span><b id="lblTenure"3 years</b></div>
+              <input type="range" id="rTenure" min="1" max="10" step="1" value="3" oninput="calcEMI()">
             </div>
 
             <div class="emi-result">
-              <div class="big" id="emiOut">₹3,430</div>
+              <div class="big" id="emiOut">₹3,610</div>
               <div class="small" data-i18n="emi.perMonth">estimated EMI per month</div>
             </div>
             <div class="split-bar"><div class="p1" id="splitP" style="width:83%"></div><div class="p2" id="splitI" style="width:17%"></div></div>
             <div class="split-legend">
-              <span><i class="dot" style="background:var(--primary)"></i><span data-i18n="emi.principal">Principal</span> ₹<span id="totP">1,80,000</span></span>
-              <span><i class="dot" style="background:var(--accent)"></i><span data-i18n="emi.interest">Interest</span> ₹<span id="totI">25,800</span></span>
+              <span><i class="dot" style="background:var(--primary)"></i><span data-i18n="emi.principal">Principal</span> ₹<span id="totP">1,20,000</span></span>
+              <span><i class="dot" style="background:var(--accent)"></i><span data-i18n="emi.interest">Interest</span> ₹<span id="totI">9,960</span></span>
             </div>
           </section>
 
         </div>
       </div>
     </div>
-    <div style="font-size:12px;color:#7a8580;text-align:center;max-width:300px;" data-i18n="panel.footer">Clickable prototype · sample data for demo purposes</div>
+    <div style="font-size:16px;color:#7a8580;text-align:center;max-width:300px;" data-i18n="panel.footer">Clickable prototype · sample data for demo purposes</div>
   </div>
 </div>
 
